@@ -1,0 +1,87 @@
+/*resets */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: #333;
+  font-family: Arial, Helvetica, sans-serif;
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.main-container {
+  flex-grow: 1;
+}
+
+header {
+  margin: 1.5rem 0;
+  padding: 0.5rem;
+}
+
+header h1 {
+  font-size: 48px;
+  margin-bottom: 1rem;
+}
+
+header a {
+  padding-right: 2rem;
+  color: #888;
+  font-size: 1rem;
+  text-decoration: none;
+}
+
+.portfolio {
+  width: 500px;
+}
+
+.help-404 {
+  font-size: 20rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: #000;
+  padding-right: 4rem;
+}
+
+form {
+  margin: 2rem 0;
+}
+
+input {
+  border: 1px solid #ccc;
+  padding: 8px;
+}
+
+button {
+  cursor: pointer;
+  border: 1px solid #888;
+  background-color: #000;
+  color: #fff;
+  padding: 8px;
+}
+
+.weather-icon {
+  width: 70px;
+  height: 70px;
+  display: none;
+}
+
+.weather-content {
+  width: 50%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+footer {
+  margin-bottom: 2rem;
+  border-top: 1px solid #eee;
+  font-size: 1rem;
+  padding: 1rem 0;
+  color: #333;
+}
