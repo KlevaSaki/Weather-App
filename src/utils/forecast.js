@@ -2,6 +2,8 @@
 //create a server that will serve the info to the browser
 
 const request = require("request");
+require("dotenv").config();
+const FORECAST_API_KEY = process.env.FORECAST_API_KEY;
 
 const forecast = (lat, lon, callback) => {
   const url =
@@ -9,7 +11,8 @@ const forecast = (lat, lon, callback) => {
     lat +
     "&lon=" +
     lon +
-    "&appid=95a2d2ec482edde071de8f7f6d3a049a";
+    "&appid=" +
+    FORECAST_API_KEY;
 
   request({ url, json: true }, (error, res) => {
     if (error) {
