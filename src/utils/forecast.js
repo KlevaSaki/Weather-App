@@ -4,6 +4,7 @@
 const request = require("request");
 require("dotenv").config();
 const FORECAST_API_KEY = process.env.FORECAST_API_KEY;
+console.log("FORECAST_KEY " + FORECAST_API_KEY);
 
 const forecast = (lat, lon, callback) => {
   const url =

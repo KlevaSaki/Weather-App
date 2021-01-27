@@ -12,7 +12,6 @@ const port = process.env.PORT || 3000;
 
 //Static render config
 const publicDirectoryPath = path.join(__dirname, "../public");
-console.log(publicDirectoryPath);
 const partialsPath = path.join(__dirname, "../templates/partials");
 const viewsPath = path.join(__dirname, "../templates/views");
 
