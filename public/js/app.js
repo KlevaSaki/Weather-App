@@ -5,7 +5,7 @@ const input = document.querySelector("input");
 const messageOne = document.querySelector("#message-1");
 const messageTwo = document.querySelector("#message-2");
 const messageThree = document.querySelector("#message-3");
-const image = document.querySelector(".weather-icon");
+// const image = document.querySelector(".weather-icon");
 
 form.addEventListener("submit", (e) => {
   e.preventDefault();
@@ -19,7 +19,7 @@ form.addEventListener("submit", (e) => {
       if (data.error) {
         messageOne.textContent = data.error;
       } else {
-        image.style.display = "block";
+        // image.style.display = "block";
         messageOne.textContent = data.location;
         messageTwo.textContent = data.temperature + " degrees fareinheit";
         messageThree.textContent = data.weather;
