@@ -2,7 +2,6 @@ const request = require("request");
 
 require("dotenv").config();
 const GEOCODE_API_KEY = process.env.GEOCODE_API_KEY;
-console.log("API_KEY " + GEOCODE_API_KEY);
 
 const geocode = (location, callback) => {
   const url =
